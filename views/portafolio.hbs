@@ -1,0 +1,31 @@
+{{> header }}
+
+<body>
+
+    {{> navbar }}
+
+    <div class="contenedor">
+        <div class="formulario">
+            <form method="post" align="center">
+                <input type="text" id="name" name="name" placeholder="Ingrese el numero de ventas:"/>
+                <input type="text" id="name1" name="name1" placeholder="Ingrese el monto de compras:"/>
+                <input type="submit" placeholder="Enviar"> 
+            </form>
+        </div> 
+        <div class="contenedor" align="center">
+            <br>
+            <h3>Presición del modelo = {{pres}}</h3>
+            <h3>MAE = {{mae}}</h3>
+            <h3>MSE = {{mse}}</h3>
+            <h3>RMSE = {{rmse}}</h3>
+            <h3>R2 = {{r2}}</h3>
+            <br>
+            <h1>----------------Jaccard----------------</h1>
+        </div>
+    </div>
+
+    {{> footer}}
+
+</body>
+
+</html>
